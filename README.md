@@ -2,6 +2,8 @@
 
 Personal vim configuration. 
 
+## Use ghostty or kitty for all features
+
 ### Installation
 
 1. Clone the repository to your home directory:
@@ -21,6 +23,11 @@ and luarock (follow instructions at luarocks.org)
 ```
 sudo apt install clangd python3-pip python3-venv
 python3 -m pip install isort black pyright
+
+# Copilot
+sudo apt install npm 
+npm install -g n
+
 ```
 
 Configure the lsps you want using the :Mason command inside nvim.
