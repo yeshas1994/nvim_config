@@ -36,6 +36,7 @@ return {
         -- "emmet_ls",
         -- "prismals",
         "jedi_language_server",
+        "clangd",
       },
     })
 
