@@ -24,9 +24,8 @@ and luarock (follow instructions at luarocks.org)
 sudo apt install clangd python3-pip python3-venv
 python3 -m pip install isort black pyright
 
-# Copilot
-sudo apt install npm 
-npm install -g n
+# nodejs use nvm 
+nvm install latest
 
 ```
 
