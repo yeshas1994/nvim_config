@@ -35,12 +35,13 @@ return {
         -- "graphql",
         -- "emmet_ls",
         -- "prismals",
-        "pyright",
+        "jedi_language_server",
       },
     })
 
     mason_tool_installer.setup({
       ensure_installed = {
+        "ruff"
         -- "prettier", -- prettier formatter
         --"stylua", -- lua formatter
         --"isort", -- python formatter
