@@ -1,8 +1,7 @@
 return {
-  "williamboman/mason.nvim",
+  "mason-org/mason.nvim",
   dependencies = {
-    "williamboman/mason-lspconfig.nvim",
-    "WhoIsSethDaniel/mason-tool-installer.nvim",
+    "mason-org/mason-lspconfig.nvim",
   },
   config = function()
     -- import mason
@@ -10,8 +9,6 @@ return {
 
     -- import mason-lspconfig
     local mason_lspconfig = require("mason-lspconfig")
-
-    local mason_tool_installer = require("mason-tool-installer")
 
     -- enable mason and configure icons
     mason.setup({
@@ -27,6 +24,7 @@ return {
     mason_lspconfig.setup({
       -- list of servers for mason to install
       ensure_installed = {
+<<<<<<< HEAD
         -- "html",
         -- "cssls",
         -- "tailwindcss",
@@ -51,5 +49,16 @@ return {
         --"eslint_d",
       },
     })
+=======
+        "jedi_language_server",
+	    "clangd",
+      },
+    })
+
+    -- mason_tool_installer.setup({
+    --   ensure_installed = {
+    --   },
+    -- })
+>>>>>>> 4b83cfd (move to opencode)
   end,
 }
