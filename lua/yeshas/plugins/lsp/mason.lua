@@ -24,8 +24,8 @@ return {
     mason_lspconfig.setup({
       -- list of servers for mason to install
       ensure_installed = {
-        "jedi_language_server",
-	"clangd",
+     --    "jedi_language_server",
+    	-- "clangd",
       },
     })
 
